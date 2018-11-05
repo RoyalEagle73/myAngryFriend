@@ -1,4 +1,9 @@
 NOTICE : ONLY FOR WINDOW OPERATING MACHINES, SOME TOOLS MAY REQUIRE ADMINISTRATOR PRIVILAGES
+
+Function : According to your choice of tool, program creates a file accordingly and copies pre-decided codes into the file and then executes the file, after successfull execution, deletes the traces of residual files
+
+Exceptions : In some instances residual file is not cleared leaving a file behind, at once maximum of only one file of one type is left, so with three different types at most three files may be left behind...
+
 Contains two categories:
 1)malware:
   Malware contains codes which can be used to infect other machines or prank someone while disturbing someone while their work, it further contains two categories
