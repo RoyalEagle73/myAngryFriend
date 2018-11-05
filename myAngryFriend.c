@@ -3,6 +3,8 @@ PROJECT BY: Deepak Chauhan
 College : National Institute Of Technology, Jamshedpur
 YEAR : 2018
 Language : 'C'
+Pre-Requisites : 'gcc' or any kind of compiler installed
+Compatibility : Windows 10 or less (UNIX compatibility coming soon ...)
 */
 
 #include<stdio.h>
