@@ -1,8 +1,8 @@
 /*
-PROJECT BY: Deepak Chauhan & Arun Lachheta
-ROLL NO : 2018PGCACA63 & 2018PGCACA24
-SEMESTER : 1ST
+PROJECT BY: Deepak Chauhan
+College : National Institute Of Technology, Jamshedpur
 YEAR : 2018
+Language : 'C'
 */
 
 #include<stdio.h>
