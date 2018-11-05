@@ -1,3 +1,4 @@
+NOTICE : ONLY FOR WINDOW OPERATING MACHINES, SOME TOOLS MAY REQUIRE ADMINISTRATOR PRIVILAGES
 Contains two categories:
 1)malware:
   Malware contains codes which can be used to infect other machines or prank someone while disturbing someone while their work, it further contains two categories
